@@ -56,7 +56,8 @@ def get_np_array_from_lines_color( lines, is_verts, width = 240, height = 180, r
             datos.append([int(list_temp[2])/255, int(list_temp[1])/255, int(list_temp[0])/255])
     return (np.array(datos), int(width), int(height), np.array(datos))
 
-file_open_vert = 'C:/Users/Angel Sappa/Documents/Capturas/D435i/pruebas/' +'pruebas_3.txt'
+ubicacion = 'C:/Users/steven/Documents/Git/Investigacion/Capturas/Nueva/Sin sistema de sujecion/'
+file_open_vert = ubicacion +'out15-03-2021-15-10-13_40-22_full_S_PtoP.txt'
 fic = open(file_open_vert, "r")
 
 # [175, 38, 274, 267]
@@ -84,7 +85,7 @@ fic.close()
 # downpcd = voxel_down_sample(pcd, voxel_size = 0.005)
 # draw_geometries([downpcd])
 
-file_open_vert = 'C:/Users/Angel Sappa/Documents/Capturas/D435i/pruebas/' +'pruebas_color_3.txt'
+file_open_vert = ubicacion +'out15-03-2021-15-10-13_40-22_full_S_colorPtoP.txt'
 fic = open(file_open_vert, "r")
 (nuevoObj_col, width, height, datos_2) = get_np_array_from_lines_color(fic.readlines(), True, 240, 180, [120, 40, 245, 278])
 fic.close()
