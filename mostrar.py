@@ -67,7 +67,7 @@ fic = open(file_open_vert, "r")
 (nuevoObj, width, height, datos) = get_np_array_from_lines_nueva(fic.readlines(), True, 240, 180, [120, 40, 245, 278])
 fic.close()
 
-#=====================================================
+# =====================================================================
 # file_open_jpg = "C:/Users/Angel Sappa/Documents/Capturas/D435i/NewMultiple/"+"out07-03-2021-15-52-28_4-17_third_M4_2D.jpg"
 # v_img = cv2.imread(file_open_jpg)
 
@@ -80,10 +80,11 @@ fic.close()
 # # print(pcd)
 # # pcd = geometry.crop_point_cloud(pcd, np.array([0,0,0]), np.array([403,205,1]))
 # draw_geometries([pcd])
-#=====================================================
 
 # downpcd = voxel_down_sample(pcd, voxel_size = 0.005)
 # draw_geometries([downpcd])
+
+# =====================================================================
 
 file_open_vert = ubicacion +'out15-03-2021-15-10-13_40-22_full_S_colorPtoP.txt'
 fic = open(file_open_vert, "r")
